@@ -1,0 +1,78 @@
+<!doctype html>
+	<head>
+		<title>Bamboo Chinese Takeout</title>
+		<link rel= "stylesheet" href ="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src = "slideshow.js"></script>
+		
+		<script type="text/javascript">
+    $(document).ready(function() {
+            $("#pageContent").css("display", "none");
+            $("#pageContent").fadeIn(1000);
+			$("a").click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+        $("#pageContent").fadeOut(500, redirectPage);      
+    });
+         
+    function redirectPage() {
+        window.location = linkLocation;
+    }
+});
+</script>
+		</head>
+	<div id = "container">
+	
+	<header>
+		<img src = "images/bambooHeader2.png"/>
+			
+	</header>
+			<div id = "menuBar">
+			<ul>
+					<li><a href ="locations.html">LOCATIONS</a></li>
+					<li><a href = "menu.html">MENU</a></li>
+					<li><a href = "about.html">ABOUT US</a></li>
+					
+				</ul>
+			
+		</div>
+	<body>
+		
+			<div class = "jumbotron">
+				<img src = "images/bambooName.png"/>
+			</div>
+	
+
+	<div id = "pageContent">
+		<div id = "mainContent1">
+			<div id = "specialsLink">
+				<a href = "index.html">CLICK HERE FOR SPECIALS!</a>
+			</div>
+			<div id = "menuContent">
+			<img src = "images/BambooMenu2.png"/>
+			</div>
+		</div>
+	</div>
+		
+		<div id = "mainContent2">
+			Call it in!</br>
+			We Deliver!
+			</br></br>
+			
+			Joplin </br>       <a href="tel:14177815100">(417) 781-5100</a></br></br>
+			Carl Junction</br> <a href="tel:14176498002">(417) 649-8002</a></br></br>
+			Pittsburg</br>     <a href="tel:16202314226">(620) 231-4226</a></br></br>
+			Webb City </br>    <a href="tel:14176735100">(417) 673-5100</a></br></br>
+			
+			<a href="http://facebook.com/bamboowebbcity">
+				<div id = "facebookLink">
+					<img src= "images/facebook.png" /></a>
+					
+				</div>
+		</div>
+		<div id = "footer">
+			<p>&copy; 2016 rgDev </p>
+		</div>
+	</body>
+	</div>
+</html>

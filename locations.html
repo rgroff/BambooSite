@@ -1,0 +1,103 @@
+<!doctype html>
+	<head>
+		<title>Bamboo Chinese Takeout</title>
+		<link rel= "stylesheet" href ="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src = "slideshow.js"></script>
+		
+		<script type="text/javascript">
+    $(document).ready(function() {
+            $("#pageContent").css("display", "none");
+            $("#pageContent").fadeIn(1000);
+			$("a").click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+        $("#pageContent").fadeOut(500, redirectPage);      
+    });
+         
+    function redirectPage() {
+        window.location = linkLocation;
+    }
+});
+</script>
+		</head>
+	<div id = "container">
+	<header>
+		<img src = "images/bambooHeader2.png"/>
+			
+	</header>
+			<div id = "menuBar">
+			<ul>
+					<li><a href ="locations.html">LOCATIONS</a></li>
+					<li><a href = "menu.html">MENU</a></li>
+					<li><a href = "about.html">ABOUT US</a></li>
+					
+				</ul>
+			
+		</div>
+	<body>
+		
+			<div class = "jumbotron">
+				<img src = "images/bambooName.png"/>
+			</div>
+	
+		<div id = "mainContent2">
+			Call it in!</br>
+			We Deliver!
+			</br></br>
+			
+			Joplin </br>       <a href="tel:14177815100">(417) 781-5100</a></br></br>
+			Carl Junction</br> <a href="tel:14176498002">(417) 649-8002</a></br></br>
+			Pittsburg</br>     <a href="tel:16202314226">(620) 231-4226</a></br></br>
+			Webb City </br>    <a href="tel:14176735100">(417) 673-5100</a></br></br>
+			
+			<a href="http://facebook.com/bamboowebbcity">
+				<div id = "facebookLink">
+					<img src= "images/facebook.png" /></a>
+					
+				</div>
+		</div>
+		
+	<div id = "pageContent">
+		
+		<div id = "maps">
+			Joplin, MO </br>
+			Mon - Fri   </br>
+			<a href = "https://www.google.com/maps/place/2316+S+Maiden+Ln,+Joplin,+MO+64804/@37.0655284,-94.5345385,17z/data=!3m1!4b1!4m2!3m1!1s0x87c87ae8ba5094b3:0xfbe853b1fc5728e2">
+			2316 S Maiden Ln</br></a>
+			<img src = "images/bambooJoplin.png"/></br></br>
+			
+			Pittsburg, KS</br>
+			Mon - Fri      </br>
+			<a href = "https://www.google.com/maps/place/808+N+Broadway+St,+Pittsburg,+KS+66762/@37.4153984,-94.7067283,17z/data=!3m1!4b1!4m2!3m1!1s0x87c7c2f507c6ec13:0x7a4445b5425e08e3">
+			808 N Broadway St</a></br>
+			<img src = "images/bambooPitt.png"/></br></br>
+		
+		</div>
+		
+		<div id = "maps2">	
+			Carl Junction, MO</br>
+			Mon - Fri     </br>
+			<a href = "https://www.google.com/maps/place/1311+E+Pennell+St,+Carl+Junction,+MO+64834/@37.1752796,-94.5490684,17z/data=!3m1!4b1!4m2!3m1!1s0x87c87836d68adac1:0x56646190607a7c1f">
+			1311 Pennell St</a></br>
+			<img src = "images/bambooCj.png"/></br></br>
+				
+				
+			Webb City, MO</br>
+			Mon - Fri       </br>
+			<a href = "https://www.google.com/maps/place/111+N+Madison+St,+Webb+City,+MO+64870/@37.1467048,-94.4763124,17z/data=!3m1!4b1!4m2!3m1!1s0x87c87eb6652bddaf:0xd710468873693a2d">
+			111 N Madison St</a></br>
+			<img src = "images/bambooWebb.png"/></br></br>
+			
+		</div>
+		
+		
+	</div>
+		
+		
+		<div id = "footer">
+			<p>&copy; 2016 rgDev </p>
+		</div>
+	</body>
+	</div>
+</html>
